@@ -67,7 +67,7 @@ void sortByFirstName(char **names, char **families, int *ids, int *ages, int nam
     {
         for (int j = i + 1; j < namesSize; j++)
         {
-            if (strcmp(names[i], names[j]));
+            if (strcmp(names[i], names[j]) > 0)
             {
                 strcpy(temp, names[i]);
                 strcpy(names[i], names[j]);
